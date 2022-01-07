@@ -91,7 +91,7 @@
 		$.ajax({
 			url: l_url,
 			context: document.body
-		}).done(function() {
+		}).done(function(data) {
 			$("#conteudo").html(data);
 		});
 	}
@@ -100,9 +100,9 @@
 			$('#sidebar').toggleClass('active');
 		});
 		window.addEventListener('popstate', function(){
-			alert('pg');
+			//alert('pg');
 			var pg = window.location.href.split("#")[1]
-			alert(pg);
+			//alert(pg);
 			page(pg);
 		});
 	});
