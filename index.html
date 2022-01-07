@@ -93,6 +93,7 @@
 			context: document.body
 		}).done(function(data) {
 			$("#conteudo").html(data);
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
 		});
 	}
 	$(document).ready(function () {
