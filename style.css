@@ -179,3 +179,7 @@ a.article:hover {
 .tituloArea span {
     color: silver; padding-left: 15px
 }
+
+.conteudo {
+    color: black;
+}
